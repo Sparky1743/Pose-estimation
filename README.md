@@ -7,7 +7,7 @@ System Specifications:
 3) Virtual Studio 17, 2022
 4) CUDA - 12.3, cuDNN 8.9.7
 
-Required files for OpenPose models are downloaded from :
+Required files for OpenPose models are downloaded from:
 1) https://github.com/CMU-Perceptual-Computing-Lab/openpose
 2) https://github.com/XeroLen23/OpenPose_dependencies
 
