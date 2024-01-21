@@ -1,7 +1,5 @@
 # Pose-estimation
-Implemented the human pose estimation using the OpenPose model
-The folder "Open Pose" contains the codes to estimate the poses in images and videos
-The videos processed by the model can be [found here](https://iitgnacin-my.sharepoint.com/:f:/g/personal/22110050_iitgn_ac_in/EsCh9PatjaBHjldrNO1yzo8BDKIGl4qDh5KZU5dvKPwADA?e=WeLBSl).
+Implemented the human pose estimation using the OpenPose model. The folder "Open Pose" contains the codes to estimate the poses in images and videos. The videos processed by the model can be [found here](https://iitgnacin-my.sharepoint.com/:f:/g/personal/22110050_iitgn_ac_in/EsCh9PatjaBHjldrNO1yzo8BDKIGl4qDh5KZU5dvKPwADA?e=WeLBSl).
 
 System Specifications:
 1) Windows 11
