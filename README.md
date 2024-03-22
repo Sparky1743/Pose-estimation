@@ -37,6 +37,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvi
    
 ## Conda Environment Description
 - **Python**: 3.12.2
+- **conda**: 23.7.2
 - **pip**: 23.3.1
 - [**Installed Libraries**](https://github.com/Sparky1743/Pose-estimation/blob/main/files/musclesinaction/pre_req.txt)
 
