@@ -1,0 +1,90 @@
+2024-03-23 01:02:48,007 [INFO] 
+2024-03-23 01:02:48,007 [INFO] torch version: 2.2.1
+2024-03-23 01:02:48,007 [INFO] torchvision version: 0.17.1
+2024-03-23 01:02:48,007 [INFO] Checkpoint path: checkpoints/test_generalization_predemg_1frame
+2024-03-23 01:02:48,007 [INFO] Initializing data loaders...
+2024-03-23 01:02:48,014 [INFO] Took 0.007s
+2024-03-23 01:02:48,014 [INFO] Initializing model...
+2024-03-23 01:02:48,389 [INFO] Took 0.375s
+2024-03-23 01:03:05,284 [INFO] Final train command args: Namespace(num_tokens=50, num_classes=20, dim_model=128, num_heads=16, num_encoder_layers=8, num_decoder_layers=3, dropout_p=0.1, feat_embedding_type='Conv1d', feat_embedding_in_channels=512, feat_embedding_out_channels=1024, feat_embedding_kernel_size=1, feat_embedding_padding=0, gpt_vocab_size=256, gpt_block_size=265, gpt_n_layer=19, gpt_n_head=16, gpt_n_embd=1024, bs=64, maxemg=1.0, embedding=True, cheat=False, num_workers=0, percent=1.0, predemg='True', classif=False, threed='True', resume=None, device='cuda', checkpoint_path='checkpoints/test_generalization_predemg_1frame', learn_rate=5e-05, num_epochs=25000, step=30, cond='True', name='test_generalization_predemg_1frame', log_path='logs', shifted=True, seed=100, std='False', lr_decay=1.0, plot=False, modelname='transf', l1_lw=1.0, gradient_clip=0.0, optim='adam', data_path_train='datasetsplits/train.txt', data_path_val='datasetsplits/val.txt')
+2024-03-23 01:03:05,284 [INFO] Final train dataset args: {'percent': 1.0, 'std': 'False', 'step': 30, 'cond': 'True'}
+2024-03-23 01:03:05,284 [INFO] Start training loop...
+2024-03-23 01:03:05,284 [INFO] 
+2024-03-23 01:03:05,284 [INFO] ==========================
+2024-03-23 01:03:05,284 [INFO] Epoch (1-based): 1 / 25000
+2024-03-23 01:03:05,284 [INFO] ===> Train (train)
+2024-03-23 01:03:05,299 [ERROR] [Errno 2] No such file or directory: 'MIADatasetOfficial/train/Subject0/ElbowPunch/1073/emgvalues.npy'
+Traceback (most recent call last):
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 314, in <module>
+    main(args, logger)
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 291, in main
+    _train_all_epochs(
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 120, in _train_all_epochs
+    _ = _train_one_epoch(
+        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 55, in _train_one_epoch
+    for cur_step, data_retval in enumerate(tqdm.tqdm(data_loader)):
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\dataloader\data.py", line 182, in __getitem__
+    emg_values = np.load(filepath + "/emgvalues.npy")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'MIADatasetOfficial/train/Subject0/ElbowPunch/1073/emgvalues.npy'
+2024-03-23 01:03:05,299 [WARNING] Shutting down due to exception...
+2024-03-23 01:34:00,409 [INFO] 
+2024-03-23 01:34:00,409 [INFO] torch version: 2.2.1
+2024-03-23 01:34:00,414 [INFO] torchvision version: 0.17.1
+2024-03-23 01:34:00,415 [INFO] Checkpoint path: checkpoints/test_generalization_predemg_1frame
+2024-03-23 01:34:00,419 [INFO] Initializing data loaders...
+2024-03-23 01:34:00,428 [INFO] Took 0.009s
+2024-03-23 01:34:00,428 [INFO] Initializing model...
+2024-03-23 01:34:00,786 [INFO] Took 0.358s
+2024-03-23 01:34:08,645 [INFO] Final train command args: Namespace(num_tokens=50, num_classes=20, dim_model=128, num_heads=16, num_encoder_layers=8, num_decoder_layers=3, dropout_p=0.1, feat_embedding_type='Conv1d', feat_embedding_in_channels=512, feat_embedding_out_channels=1024, feat_embedding_kernel_size=1, feat_embedding_padding=0, gpt_vocab_size=256, gpt_block_size=265, gpt_n_layer=19, gpt_n_head=16, gpt_n_embd=1024, bs=64, maxemg=1.0, embedding=True, cheat=False, num_workers=0, percent=1.0, predemg='True', classif=False, threed='True', resume=None, device='cuda', checkpoint_path='checkpoints/test_generalization_predemg_1frame', learn_rate=5e-05, num_epochs=25000, step=30, cond='True', name='test_generalization_predemg_1frame', log_path='logs', shifted=True, seed=100, std='False', lr_decay=1.0, plot=False, modelname='transf', l1_lw=1.0, gradient_clip=0.0, optim='adam', data_path_train='datasetsplits/train.txt', data_path_val='datasetsplits/val.txt')
+2024-03-23 01:34:08,645 [INFO] Final train dataset args: {'percent': 1.0, 'std': 'False', 'step': 30, 'cond': 'True'}
+2024-03-23 01:34:08,645 [INFO] Start training loop...
+2024-03-23 01:34:08,655 [INFO] 
+2024-03-23 01:34:08,671 [INFO] ==========================
+2024-03-23 01:34:08,675 [INFO] Epoch (1-based): 1 / 25000
+2024-03-23 01:34:08,675 [INFO] ===> Train (train)
+2024-03-23 01:34:08,696 [ERROR] [Errno 2] No such file or directory: 'MIADatasetOfficial/train/Subject0/ElbowPunch/1073/emgvalues.npy'
+Traceback (most recent call last):
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 314, in <module>
+    main(args, logger)
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 291, in main
+    _train_all_epochs(
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 120, in _train_all_epochs
+    _ = _train_one_epoch(
+        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\train.py", line 55, in _train_one_epoch
+    for cur_step, data_retval in enumerate(tqdm.tqdm(data_loader)):
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\birud\OneDrive - iitgn.ac.in\github\Pose-estimation\files\musclesinaction\dataloader\data.py", line 182, in __getitem__
+    emg_values = np.load(filepath + "/emgvalues.npy")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\musclesinaction\Lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'MIADatasetOfficial/train/Subject0/ElbowPunch/1073/emgvalues.npy'
+2024-03-23 01:34:08,706 [WARNING] Shutting down due to exception...

@@ -1,0 +1,7 @@
+MIADatasetOfficial/val/Subject1/Squat/104
+MIADatasetOfficial/val/Subject1/Squat/103
+MIADatasetOfficial/val/Subject1/Squat/100
+MIADatasetOfficial/val/Subject1/Squat/102
+MIADatasetOfficial/val/Subject1/Squat/105
+MIADatasetOfficial/val/Subject1/Squat/101
+MIADatasetOfficial/val/Subject1/Squat/106
