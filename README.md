@@ -7,7 +7,7 @@ Required files for OpenPose models are downloaded from:
 
 # MusclesInAction Model Installation Guide
 Required files:
-1) [vibe data](https://github.com/mchiquier/musclesinaction)
+1) [vibe data](https://iitgnacin-my.sharepoint.com/:f:/g/personal/22110050_iitgn_ac_in/EtRhtOX9t3BJhX0EBC4f0N4BzSHOQ0HcJdJ21MfHfnhXXw?e=td8i7M)
 2) [Dataset - 53gb](https://musclesinaction.cs.columbia.edu/MIADataset.tar)
    
 To create a new conda environment:
