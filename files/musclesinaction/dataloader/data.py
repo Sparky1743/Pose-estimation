@@ -177,18 +177,18 @@ class MyMuscleDataset(torch.utils.data.Dataset):
 
         filepath =  self.all_files[index].split("\n")[0]
         if self.std == "True":
-            emg_values = np.load(filepath + "/emgvaluesstd.npy")
+            emg_values = np.load("D:/SSD-files/CS - 299 (Sem 2)/"+ filepath + "/emgvaluesstd.npy")
         else:
-            emg_values = np.load(filepath + "/emgvalues.npy")
-        twod_joints = np.load(filepath + "/joints2d.npy")
-        threed_joints = np.load(filepath + "/joints3d.npy")
-        predcam = np.load(filepath + "/predcam.npy")
-        origcam = np.load(filepath + "/origcam.npy")
-        bboxes = np.load(filepath + "/bboxes.npy")
-        pose = np.load(filepath + "/pose.npy")
-        twodskeletonsmpl = np.load(filepath + "/joints2dsmpl.npy")
-        betas = np.load(filepath + "/betas.npy")
-        verts = np.load(filepath + "/verts.npy")
+            emg_values = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/emgvalues.npy")
+        twod_joints = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/joints2d.npy")
+        threed_joints = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/joints3d.npy")
+        predcam = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/predcam.npy")
+        origcam = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/origcam.npy")
+        bboxes = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/bboxes.npy")
+        pose = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/pose.npy")
+        twodskeletonsmpl = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/joints2dsmpl.npy")
+        betas = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/betas.npy")
+        verts = np.load("D:/SSD-files/CS - 299 (Sem 2)/" + filepath + "/verts.npy")
             
         person = filepath.split("/")[2]
 

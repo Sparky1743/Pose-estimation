@@ -1,0 +1,169 @@
+wandb_version: 1
+
+num_tokens:
+  desc: null
+  value: 50
+num_classes:
+  desc: null
+  value: 20
+dim_model:
+  desc: null
+  value: 128
+num_heads:
+  desc: null
+  value: 16
+num_encoder_layers:
+  desc: null
+  value: 8
+num_decoder_layers:
+  desc: null
+  value: 3
+dropout_p:
+  desc: null
+  value: 0.1
+feat_embedding_type:
+  desc: null
+  value: Conv1d
+feat_embedding_in_channels:
+  desc: null
+  value: 512
+feat_embedding_out_channels:
+  desc: null
+  value: 1024
+feat_embedding_kernel_size:
+  desc: null
+  value: 1
+feat_embedding_padding:
+  desc: null
+  value: 0
+gpt_vocab_size:
+  desc: null
+  value: 256
+gpt_block_size:
+  desc: null
+  value: 265
+gpt_n_layer:
+  desc: null
+  value: 19
+gpt_n_head:
+  desc: null
+  value: 16
+gpt_n_embd:
+  desc: null
+  value: 1024
+bs:
+  desc: null
+  value: 64
+maxemg:
+  desc: null
+  value: 1.0
+embedding:
+  desc: null
+  value: true
+cheat:
+  desc: null
+  value: false
+num_workers:
+  desc: null
+  value: 0
+percent:
+  desc: null
+  value: 1.0
+predemg:
+  desc: null
+  value: 'True'
+classif:
+  desc: null
+  value: false
+threed:
+  desc: null
+  value: 'True'
+resume:
+  desc: null
+  value: null
+device:
+  desc: null
+  value: cuda
+checkpoint_path:
+  desc: null
+  value: checkpoints/test_generalization_predemg_1frame
+learn_rate:
+  desc: null
+  value: 5.0e-05
+num_epochs:
+  desc: null
+  value: 25000
+step:
+  desc: null
+  value: 30
+cond:
+  desc: null
+  value: 'True'
+name:
+  desc: null
+  value: test_generalization_predemg_1frame
+log_path:
+  desc: null
+  value: logs
+shifted:
+  desc: null
+  value: true
+seed:
+  desc: null
+  value: 100
+std:
+  desc: null
+  value: 'False'
+lr_decay:
+  desc: null
+  value: 1.0
+plot:
+  desc: null
+  value: false
+modelname:
+  desc: null
+  value: transf
+l1_lw:
+  desc: null
+  value: 1.0
+gradient_clip:
+  desc: null
+  value: 0.0
+optim:
+  desc: null
+  value: adam
+data_path_train:
+  desc: null
+  value: datasetsplits/train.txt
+data_path_val:
+  desc: null
+  value: datasetsplits/val.txt
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.2
+    cli_version: 0.16.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1711817781.0
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 1
+      - 13
+      - 16
+      - 23
+      4: 3.12.2
+      5: 0.16.4
+      8:
+      - 3
+      - 5
+      13: windows-amd64

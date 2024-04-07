@@ -219,7 +219,6 @@ def main(args, logger):
     train_pipeline = pipeline.MyTrainPipeline(args, logger, networks, device)
     train_pipeline = train_pipeline.to(device)
     train_pipeline_nodp = train_pipeline
-    train_pipeline_nodp = train_pipeline
     if args.device == 'cuda':
         train_pipeline = torch.nn.DataParallel(train_pipeline)
 
