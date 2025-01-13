@@ -1,5 +1,5 @@
 # Pose-Estimation Using OpenPose Model
-Implemented the human pose estimation using the OpenPose model. The folder "Open Pose" contains the codes to estimate the poses in images and videos. The videos processed by the model can be [found here](https://iitgnacin-my.sharepoint.com/:f:/g/personal/22110050_iitgn_ac_in/EsCh9PatjaBHjldrNO1yzo8BDKIGl4qDh5KZU5dvKPwADA?e=WeLBSl).
+Implemented the human pose estimation using the OpenPose model. The folder "Open Pose" contains the codes to estimate the poses in images and videos. The videos processed by the model can be [found here](https://drive.google.com/drive/folders/10ToqBm8u-3MIxm7xvw9g3FdZgSMaHolK?usp=sharing).
 
 Required files for OpenPose models are downloaded from:
 1) https://github.com/CMU-Perceptual-Computing-Lab/openpose
@@ -7,7 +7,7 @@ Required files for OpenPose models are downloaded from:
 
 # MusclesInAction Model Installation Guide
 Required files:
-1) [vibe data](https://iitgnacin-my.sharepoint.com/:f:/g/personal/22110050_iitgn_ac_in/EtRhtOX9t3BJhX0EBC4f0N4BzSHOQ0HcJdJ21MfHfnhXXw?e=td8i7M)
+1) [vibe data](https://drive.google.com/drive/folders/1SzhrAyPZYte6mM7BzYdKdFmEmK9JPYwr?usp=sharing)
 2) [Dataset - 53gb](https://musclesinaction.cs.columbia.edu/MIADataset.tar)
    
 To create a new conda environment:
